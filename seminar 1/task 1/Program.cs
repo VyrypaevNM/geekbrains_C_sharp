@@ -4,15 +4,12 @@ Console.WriteLine("Input first number");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input second number");
 int num2 = Convert.ToInt32(Console.ReadLine());
-int a;
+int biggest = num2,
+    smallest = num1;
 if (num1 > num2)
 {
-    a = num1;
-    num1 = num2;
-    num2 = a;
+    biggest = num1;
+    smallest = num2;
 }
-
-Console.Write("Smallest number is ");
-Console.WriteLine(num1);
-Console.Write("Biggest number is ");
-Console.WriteLine(num2);
+Console.WriteLine($"Smallest number is {smallest}");
+Console.WriteLine($"Biggest number is {biggest}");

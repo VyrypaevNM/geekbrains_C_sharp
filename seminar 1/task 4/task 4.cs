@@ -3,8 +3,10 @@
 Console.WriteLine("Input number");
 int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
+if (num < 2) {Console.WriteLine($"There isn't any even number between 1 and {num}");}
 int count = 2;
 while (count <= num)
 {
     Console.Write($"{count}  ");
-count = count + 2;
+    count = count + 2;
+}
