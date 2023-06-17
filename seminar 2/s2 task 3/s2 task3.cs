@@ -12,14 +12,8 @@
 //}
 //else Console.WriteLine("It's a weekday");
 int DayNumber = Input("Input day's number: ");
-if (Valid(DayNumber))
-{
-    Console.WriteLine(calc(DayNumber));
-}
-else 
-{
-    Console.WriteLine("Not a weekday");
-}
+if (Valid(DayNumber)) {Console.WriteLine(calc(DayNumber));}
+else {Console.WriteLine("Not a weekday");}
 
 int Input(string message)
 {
@@ -42,13 +36,7 @@ bool Valid(int num)
 string calc(int rez)
 {
     string message;
-    if (rez > 5)
-    {
-        message = "It's a weekend";
-    }
-    else 
-    {
-        message = "It's a weekday";
-    }
+    if (rez > 5) {message = "It's a weekend";}
+    else {message = "It's a weekday";}
     return message;
 }
